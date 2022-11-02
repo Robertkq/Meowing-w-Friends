@@ -357,5 +357,8 @@ MwF.sln
 MwF.vcxproj
 MwF.vcxproj.user
 MwF.vcxproj.filters
+MwFServer.vcxproj
+MwFServer.vcxproj.user
+MwFServer.vcxproj.filters
 scramble.h
 scramble.cpp
