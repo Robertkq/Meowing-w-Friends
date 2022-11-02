@@ -4,7 +4,7 @@ namespace kq
 {
     MwF::MwF(unsigned int width, unsigned int height, const std::string& title)
         : m_window(sf::VideoMode(width, height), title), m_deltaClock(),
-        m_state(GUIstate::Menu)
+        m_state(GUIstate::Menu), m_client(scramble)
     {
         m_window.setFramerateLimit(60);
         ImGui::SFML::Init(m_window);

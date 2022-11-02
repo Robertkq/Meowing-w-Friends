@@ -1,5 +1,7 @@
-#ifndef KQMWFCOMMON
-#define KQMWFCOMMON
+#ifndef KQMWFCOMMONCLIENT
+#define KQMWFCOMMONCLIENT
+
+#define KQMWFIMGUICLIENT
 
 #include "imgui.h"
 #include "imgui-SFML.h"
@@ -12,6 +14,7 @@
 #include <kqnet.h>
 
 #include "enums.h"
+// scramble.h and scramble.cpp implement a function for client validation
 #include "scramble.h"
 
 

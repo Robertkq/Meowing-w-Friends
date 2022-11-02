@@ -5,9 +5,12 @@
 
 namespace kq
 {
-    class client : client_interface<msgids>
+    class client : public client_interface<msgids>
     {
-
+    public:
+        client(uint64_t(*func)(uint64_t));
+    private:
+        std::string m_name;
     };
 }
 
