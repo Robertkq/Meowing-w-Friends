@@ -62,16 +62,27 @@ namespace kq
             ImGui::End();
         }
 
+        ImVec2 pos = ImGui::GetCursorPos();
+        ImGui::SetCursorPos({ pos.x + 780, pos.y + 15 });
+        if (m_client.IsConnected())
+        {
+            ImGui::TextColored(ImVec4(0.f, 255.f, 0.f, 1.f),"Connected!");
+        }
+        else
+        {
+            ImGui::TextColored(ImVec4(255.f, 0.f, 0.f, 1.f),"Disconnected");
+        }
         
-        if (ImGui::Button("Play", ImVec2{ 1600, 300 }))
+        
+        if (ImGui::Button("Play", ImVec2{ 1600, 290 }))
         {
             m_state = GUIstate::Play;
         }
-        if (ImGui::Button("Options", ImVec2{ 1600, 300 }))
+        if (ImGui::Button("Options", ImVec2{ 1600, 290 }))
         {
             m_state = GUIstate::Options;
         }
-        if (ImGui::Button("Exit", ImVec2{ 1600, 300 }))
+        if (ImGui::Button("Exit", ImVec2{ 1600, 290 }))
         {
             m_state = GUIstate::Exit;
         }

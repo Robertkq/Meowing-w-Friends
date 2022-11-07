@@ -9,8 +9,10 @@ namespace kq
     {
     public:
         client(uint64_t(*func)(uint64_t));
+        ~client();
     private:
         std::string m_name;
+        std::thread m_thr;
     };
 }
 

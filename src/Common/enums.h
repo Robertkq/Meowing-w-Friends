@@ -15,7 +15,7 @@ namespace kq
 
     enum msgids : uint8_t
     {
-
+        test
     };
 
 }
