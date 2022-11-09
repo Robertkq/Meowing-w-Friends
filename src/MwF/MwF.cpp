@@ -64,6 +64,7 @@ namespace kq
 
         ImVec2 pos = ImGui::GetCursorPos();
         ImGui::SetCursorPos({ pos.x + 780, pos.y + 15 });
+        std::cout << "Current: " << m_client.IsConnected();
         if (m_client.IsConnected())
         {
             ImGui::TextColored(ImVec4(0.f, 255.f, 0.f, 1.f),"Connected!");
