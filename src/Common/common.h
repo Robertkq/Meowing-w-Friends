@@ -11,6 +11,10 @@
 #include <SFML/System/Clock.hpp>
 #include <SFML/Window/Event.hpp>
 
+#include <vector>
+#include <unordered_map>
+#include <algorithm>
+
 #include <kqnet.h>
 
 #include "enums.h"
