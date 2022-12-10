@@ -3,6 +3,8 @@
 
 #include "../Common/common.h"
 #include "../Client/client.h"
+#include "tsun_map.h"
+#include "Player.h"
 
 namespace kq
 {
@@ -22,7 +24,14 @@ namespace kq
 
         GUIstate m_state;
 
+        kq::tsun_map<int, kq::Player> m_players;
         client m_client;
+        uint32_t m_id;
+        int32_t m_speed;
+
+        bool m_load;
+
+        
     };
 }
 
